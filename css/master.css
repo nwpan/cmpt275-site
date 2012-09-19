@@ -2,85 +2,115 @@
 /* ! Layout for desktop version   */
 /* ============================== */
 
-	body {
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	}
-	
-	.container p {
-		color: #444;
-		line-height: 35px;
-		background: #efefef;
-		text-align: center;
-		margin: 20px 0 0 0;
-        border-radius: 15px;
-        padding: 15px;
-	}
-	
-	ul#navigation {
-		list-style-type: none;
-        margin-top: 10px;
-	}
-	
-	ul#navigation li {
-		text-align: center;
-	}
-    
-    div#header {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 20px;
-    }
-    
-    div#footer {
-        font-family: 'Source Sans Pro', sans-serif;
-    }
-    
-    span#firstname {
-        color:#bbb;
-    }
-    
-    span#lastname {
-        
-    }
-    
-    .important {
-        font-weight: bold;
-    }
-    
-    a:link {
-        color:#555;
-    }
-    a:visited {
-        color:#333;
-    }
-    a:hover {
-        color:#aaa;
-    }
-    a:active {
-        color:#777;
-    }
-	
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+  
+.container p {
+  color: #444;
+  line-height: 35px;
+  background: #efefef;
+  text-align: center;
+  margin: 20px 0 0 0;
+  border-radius: 15px;
+  padding: 15px;
+}
+  
+ul#navigation {
+  list-style-type: none;
+  margin-top: 10px;
+  line-height: 35px;
+  background: #efefef;
+  border-radius: 15px;
+}
+  
+ul#navigation li {
+  text-align: center;
+}
+
+ul.team_list {
+position:relative;
+  list-style-type: none;
+  background: #efefef;
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 15px;
+  display:table;
+  height:100%;
+}
+
+ul.team_list li p.name, p.summary {
+  text-align: left;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 0;
+  margin-bottom:7px;
+}
+
+ul.team_list li p.name {
+  font-weight: bold;
+}
+
+div#header {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+
+
+div#list_content {
+  color: #444;
+  line-height: 35px;
+  background: #efefef;
+  text-align: left;
+  margin: 20px 0 0 0;
+  border-radius: 15px;
+  padding:15px;
+  width: auto;
+}
+
+div#footer {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+  
+.important {
+  font-weight: bold;
+}
+  
+a:link {
+  color:#555;
+}
+a:visited {
+  color:#333;
+}
+a:hover {
+  color:#aaa;
+}
+a:active {
+  color:#777;
+}
+  
 
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */
 
 @media handheld, only screen and (max-width: 767px) {
+  body {
+    
+  }
 
-	body {
-		
-	}
-
-	.header_note {
-		display: none;
-	}
-	
-	ul#navigation {
-		list-style-type: none;
-	}
-	
-	ul#navigation li {
-		text-align: left;
-	}
+  .header_note {
+    display: none;
+  }
+  
+  ul#navigation {
+    list-style-type: none;
+  }
+  
+  ul#navigation li {
+    text-align: left;
+  }
 }
 
 
@@ -90,9 +120,9 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) { 
 
-/*	.logo {
-		background: url(logo2x.jpg) no-repeat;
-		background-size: 212px 303px;
-	}*/
+/*  .logo {
+    background: url(logo2x.jpg) no-repeat;
+    background-size: 212px 303px;
+  }*/
 
 }
